@@ -1,0 +1,13 @@
+{
+  "name": "cadbury-gifting",
+  "version": "1.0.0",
+  "description": "Cadbury Gifting Website",
+  "main": "site.html",
+  "scripts": {
+    "start": "serve",
+    "build": "echo 'No build step needed'"
+  },
+  "dependencies": {
+    "serve": "^14.2.1"
+  }
+} 
