@@ -1,0 +1,1991 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="description" content="Find the perfect anniversary gifts at Cadbury Gifting. Shop chocolate gift boxes, personalized gifts, and more for your special occasions.">
+    <meta name="theme-color" content="#2d006b">
+    <title>Anniversary Gifts - Cadbury Gifting</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Critical CSS for fast initial rendering -->
+    <style>
+        /* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, Roboto, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #2d006b;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Header Styles */
+.main-header {
+    background-color: #2d006b;
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    position: relative;
+    z-index: 100;
+}
+
+.top-strip {
+    background-color: #472f92;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    width: 100%;
+}
+
+@media (max-width: 991px) {
+    .top-strip {
+        padding: 0 10px;
+        font-size: 14px;
+    }
+}
+
+.main-navigation {
+    background-color: #2d006b;
+    padding: 15px 0;
+}
+
+.nav-container {
+    max-width: 1387px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+@media (max-width: 991px) {
+    .nav-container {
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+}
+
+.search-container {
+    flex: 1;
+    max-width: 400px;
+}
+
+.search-input {
+    width: 100%;
+    border-radius: 30px;
+    background-color: #2d096b;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 14px 21px;
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+.search-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 991px) {
+    .search-input {
+        padding: 10px 15px;
+    }
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 2;
+}
+
+
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    transition: opacity 0.2s ease;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #ffffff;
+}
+
+@media (max-width: 991px) {
+    .nav-right {
+        max-width: 100%;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+}
+
+.occasions-dropdown {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 2;
+    white-space: nowrap;
+    cursor: pointer;
+    position: relative;
+}
+@media (max-width: 991px) {
+    .occasions-dropdown {
+        white-space: initial;
+    }
+}
+/* Occasions dropdown menu */
+.occasions-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #2d006b;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    min-width: 200px;
+    display: none;
+    flex-direction: column;
+    z-index: 200;
+    padding: 10px 0;
+}
+
+.occasions-dropdown:hover .occasions-menu,
+.occasions-menu.active {
+    display: flex;
+}
+
+.occasions-item {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+}
+
+.occasions-item:hover {
+    background-color: #472f92;
+}
+
+.occasions-dropdown:hover .dropdown-icon {
+    transform: rotate(180deg);
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 2;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 991px) {
+    .nav-menu {
+        max-width: 100%;
+        gap: 15px;
+        justify-content: center;
+    }
+}
+
+.nav-item {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.nav-item.active {
+    color: #ca9953;
+    position: relative;
+}
+
+.nav-item.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ca9953;
+}
+
+.wedding-gifts-container {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.wedding-gifts-text {
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    line-height: 2;
+    text-transform: uppercase;
+}
+
+.new-badge {
+    background-color: #72bf20;
+    padding: 1px 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    line-height: 1;
+    white-space: nowrap;
+    border-radius: 3px;
+}
+
+@media (max-width: 991px) {
+    .new-badge {
+        white-space: initial;
+    }
+}
+/* Breadcrumb Navigation */
+.breadcrumb-nav {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 15px 0;
+    margin: 0 auto;
+    max-width: 1387px;
+    padding-left: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 2;
+}
+
+@media (max-width: 991px) {
+    .breadcrumb-nav {
+        padding-left: 15px;
+        font-size: 14px;
+    }
+}
+
+.breadcrumb-link {
+    color: #2d096b;
+    text-decoration: none;
+}
+
+.breadcrumb-link.home {
+    color: #2d096b;
+}
+
+.breadcrumb-separator {
+    color: #2d096b;
+}
+
+.breadcrumb-current {
+    color: #757575;
+}
+
+/* Hero Banner */
+.hero-banner {
+    width: 100%;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+@media (max-width: 991px) {
+    .hero-image {
+        height: auto;
+    }
+}
+
+/* Main Content */
+.main-content {
+    padding: 40px 20px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+    .main-content {
+        padding: 20px 15px;
+    }
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+}
+
+@media (max-width: 991px) {
+    .content-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* Sidebar Filters */
+.filters-sidebar {
+    width: 280px;
+    flex-shrink: 0;
+}
+
+@media (max-width: 991px) {
+    .filters-sidebar {
+        width: 100%;
+    }
+}
+
+.sort-section {
+    margin-bottom: 20px;
+}
+
+.filter-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 2;
+}
+
+.filter-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.filter-title {
+    font-weight: 600;
+    color: #2d006b;
+}
+
+.sort-options {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+@media (max-width: 991px) {
+    .sort-options {
+        gap: 10px;
+    }
+}
+
+.sort-option {
+    cursor: pointer;
+    position: relative;
+    padding-left: 20px;
+}
+
+.sort-option:first-child {
+    font-weight: 600;
+}
+
+.filter-header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 2;
+}
+
+@media (max-width: 991px) {
+    .filter-header-main {
+        margin-bottom: 10px;
+    }
+}
+
+.filter-title-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.clear-all-btn {
+    background: none;
+    border: none;
+    color: #472f92;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 0;
+}
+
+.filter-categories {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 15px;
+}
+
+.filter-labels {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.filter-label {
+    cursor: pointer;
+}
+
+.filter-label:first-child {
+    font-weight: 600;
+}
+
+.filter-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.expand-icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.expand-icon:first-child {
+    margin-top: 1px;
+}
+
+/* Products Section */
+.products-section {
+    flex: 1;
+    min-width: 0;
+}
+
+@media (max-width: 991px) {
+    .products-section {
+        width: 100%;
+    }
+}
+
+.products-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    font-family: 'Inter', sans-serif;
+    color: #2d006b;
+}
+
+@media (max-width: 991px) {
+    .products-header {
+        margin-bottom: 20px;
+    }
+}
+
+.page-title {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.items-count {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+@media (max-width: 991px) {
+    .items-count {
+        font-size: 12px;
+    }
+}
+
+.products-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+@media (max-width: 991px) {
+    .products-grid {
+        gap: 20px;
+    }
+}
+
+.featured-products {
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 991px) {
+    .featured-products {
+        flex-direction: column;
+    }
+}
+
+.product-card.featured {
+    flex: 1;
+    position: relative;
+}
+
+@media (max-width: 991px) {
+    .product-card.featured {
+        width: 100%;
+    }
+}
+
+.purple-gradient {
+    border-radius: 18px;
+    background: linear-gradient(135deg, #8e44ad, #9b59b6);
+    min-height: 240px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.product-image {
+    max-width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+}
+
+.best-seller-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    padding: 3px 8px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.95);
+    z-index: 1;
+}
+
+@media (max-width: 991px) {
+    .best-seller-badge {
+        top: 10px;
+        left: 10px;
+    }
+}
+
+.badge-bg {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+.badge-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #2d006b;
+}
+
+.regular-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+@media (max-width: 991px) {
+    .regular-products {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+    color: #2d006b;
+    position: relative;
+    padding: 15px;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 991px) {
+    .product-card {
+        margin-top: 0;
+    }
+}
+
+.wishlist-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    align-self: flex-end;
+    z-index: 10;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.wishlist-icon:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 991px) {
+    .wishlist-icon {
+        margin-right: 0;
+    }
+}
+
+.product-title {
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 10px 0;
+    height: 50px;
+    overflow: hidden;
+   
+}
+
+.product-rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 5px 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.rating-score {
+    font-size: 18px;
+    margin-right: 4px;
+}
+
+.rating-stars {
+    width: 100px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.rating-count, .rating-text {
+    font-size: 12px;
+    white-space: nowrap;
+    color: #757575;
+}
+
+.product-pricing {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    flex-wrap: wrap;
+}
+
+.current-price {
+    font-size: 22px;
+    line-height: 1;
+    font-weight: 600;
+}
+
+.original-price {
+    font-size: 16px;
+    line-height: 1;
+    text-decoration: line-through;
+    color: #757575;
+}
+
+.discount-badge {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    font-size: 14px;
+    color: #388e3c;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.order-btn {
+    border-radius: 9999px;
+    background-color: #2d006b;
+    color: #ffffff;
+    border: none;
+    padding: 12px 0;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-top: 15px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 227px;
+    transition: background-color 0.2s ease;
+    align-self: center;
+}
+
+.order-btn:hover {
+    background-color: #1a0040;
+}
+
+@media (max-width: 991px) {
+    .order-btn {
+        max-width: 100%;
+    }
+}
+
+/* Third Product Card Specific Styles */
+.product-card:last-child .product-image-container {
+    border-radius: 18px;
+    background: linear-gradient(135deg, #8e44ad, #9b59b6);
+    min-height: 240px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.wishlist-icon-overlay {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.product-details {
+    margin-top: 20px;
+    padding: 0 15px;
+    font-family: 'Poppins', sans-serif;
+    color: #2d006b;
+    font-weight: 500;
+}
+
+.product-details .product-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    height: auto;
+}
+
+.product-details .current-price {
+    margin-top: 10px;
+}
+
+/* Recommended Products Section */
+.recommended-section {
+    width: 100%;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #2d006b, #472f92);
+}
+
+@media (max-width: 991px) {
+    .recommended-section {
+        padding: 30px 15px;
+    }
+}
+
+.recommended-container {
+    max-width: 1387px;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+}
+
+@media (max-width: 991px) {
+    .recommended-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.discount-sidebar {
+    background-color: #2d006b;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 250px;
+    width: 100%;
+    height: fit-content;
+}
+
+@media (max-width: 991px) {
+    .discount-sidebar {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.discount-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.discount-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+@media (max-width: 991px) {
+    .discount-info {
+        margin-top: 5px;
+    }
+}
+
+.recommended-content {
+    flex: 1;
+}
+
+@media (max-width: 991px) {
+    .recommended-content {
+        width: 100%;
+    }
+}
+
+.recommended-order-btn {
+    border-radius: 9999px;
+    background-color: #ffffff;
+    color: #2d006b;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 1;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    display: inline-block;
+}
+
+.recommended-order-btn:hover {
+    background-color: #f0f0f0;
+}
+
+@media (max-width: 991px) {
+    .recommended-order-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+.recommended-title {
+    color: #ffffff;
+    font-size: 28px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+@media (max-width: 991px) {
+    .recommended-title {
+        font-size: 22px;
+    }
+}
+
+.recommended-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+@media (max-width: 991px) {
+    .recommended-products {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+.recommended-product-card {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.recommended-product-card:hover {
+    transform: translateY(-5px);
+}
+
+@media (max-width: 991px) {
+    .recommended-product-card {
+        flex-direction: column;
+    }
+}
+
+.product-image-wrapper {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    background-color: #f5f5f5;
+}
+
+@media (max-width: 991px) {
+    .product-image-wrapper {
+        width: 100%;
+        aspect-ratio: 1;
+    }
+}
+
+.recommended-product-image {
+    max-width: 100%;
+    max-height: 150px;
+    object-fit: contain;
+}
+
+.recommended-product-details {
+    flex: 1;
+    padding: 20px;
+}
+
+@media (max-width: 991px) {
+    .recommended-product-details {
+        padding: 15px;
+    }
+}
+
+.recommended-product-title {
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.4;
+    color: #2d006b;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.recommended-product-rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #757575;
+}
+
+.recommended-product-rating .rating-stars {
+    width: 100px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.recommended-product-price {
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #2d006b;
+    margin-bottom: 15px;
+}
+
+.recommended-product-details .recommended-order-btn {
+    border-radius: 9999px;
+    background-color: #2d006b;
+    color: #ffffff;
+    padding: 10px 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 1;
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.2s ease;
+}
+
+.recommended-product-details .recommended-order-btn:hover {
+    background-color: #1a0040;
+}
+
+@media (max-width: 991px) {
+    .recommended-product-details .recommended-order-btn {
+        padding: 8px 0;
+    }
+}
+
+/* Content Section */
+.content-section {
+    width: 100%;
+    padding: 60px 20px;
+    position: relative;
+}
+
+.content-background {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    background-color: #f5f5f5;
+}
+
+@media (max-width: 991px) {
+    .content-background {
+        height: 100%;
+    }
+}
+
+.content-bg-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.1;
+}
+
+.content-text {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    color: #2d006b;
+}
+
+.content-title {
+    font-size: 32px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 991px) {
+    .content-title {
+        font-size: 24px;
+    }
+}
+
+.content-description {
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+    .content-description {
+        font-size: 14px;
+    }
+}
+
+/* Footer */
+.main-footer {
+    background-color: #2d006b;
+    color: #ffffff;
+    padding: 60px 20px 30px;
+    width: 100%;
+}
+
+@media (max-width: 991px) {
+    .main-footer {
+        padding: 40px 15px 20px;
+    }
+}
+
+.footer-content {
+    max-width: 1387px;
+    margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+    .footer-content {
+        max-width: 100%;
+    }
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 991px) {
+    .footer-columns {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    flex: 1;
+}
+
+.footer-column:first-child {
+    flex: 2;
+}
+
+.footer-column:nth-child(2) {
+    flex: 1.5;
+}
+
+.footer-column:nth-child(3) {
+    flex: 1.5;
+}
+
+.footer-column:last-child {
+    flex: 1;
+}
+
+@media (max-width: 991px) {
+    .footer-column {
+        min-width: 100%;
+    }
+}
+
+.footer-heading {
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 10px;
+    transition: opacity 0.2s ease;
+}
+
+.footer-link:first-child {
+    margin-top: 0;
+}
+
+.contact-info {
+    font-style: normal;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.address-line {
+    margin-bottom: 5px;
+}
+
+.address-line:first-child {
+    margin-top: 0;
+}
+
+.contact-btn {
+    border-radius: 9999px;
+    background-color: #ffffff;
+    color: #2d006b;
+    text-decoration: none;
+    padding: 8px 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 1;
+    display: inline-block;
+    margin-bottom: 20px;
+    transition: background-color 0.2s ease;
+}
+
+.contact-btn:hover {
+    background-color: #f0f0f0;
+}
+
+@media (max-width: 991px) {
+    .contact-btn {
+        margin-top: 10px;
+    }
+}
+
+.mondelez-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 991px) {
+    .mondelez-info {
+        flex-wrap: wrap;
+    }
+}
+
+.mondelez-logo {
+    width: 112px;
+    aspect-ratio: 2.16;
+    object-fit: contain;
+}
+
+.license-info {
+    margin-bottom: 20px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.license-title {
+    margin-bottom: 5px;
+}
+
+.license-number {
+    opacity: 0.8;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    transition: opacity 0.2s ease;
+}
+
+.social-icon:hover {
+    opacity: 0.8;
+}
+
+.footer-logo {
+    width: 110px;
+    aspect-ratio: 1.1;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 991px) {
+    .footer-logo {
+        margin-top: 30px;
+    }
+}
+
+.footer-bottom {
+    display: flex;
+    width: 100%;
+    max-width: 1300px;
+    padding: 20px 0;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+@media (max-width: 991px) {
+    .footer-bottom {
+        padding: 15px 0;
+        text-align: center;
+    }
+}
+
+.footer-bottom-menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Enhanced Responsive Design */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .nav-left {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .search-container {
+        max-width: 100%;
+        width: 100%;
+        order: 3;
+        margin-top: 10px;
+    }
+
+    .nav-right {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 0;
+        order: 2;
+    }
+
+    .occasions-dropdown, .nav-menu, .wedding-gifts-container {
+        display: none;
+    }
+
+    .login-section {
+        margin-left: auto;
+    }
+
+    .products-grid {
+        flex-direction: column;
+    }
+
+    .featured-products,
+    .regular-products {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .product-card.featured {
+        width: 100%;
+    }
+
+    .recommended-products {
+        flex-direction: column;
+    }
+
+    .footer-columns {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+/* Additional Mobile Optimization */
+@media (max-width: 480px) {
+    .page-title {
+        font-size: 24px;
+    }
+
+    .product-title {
+        font-size: 16px;
+        height: 45px;
+    }
+
+    .current-price {
+        font-size: 18px;
+    }
+
+    .product-pricing {
+        flex-wrap: wrap;
+    }
+
+    .order-btn {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+
+    .recommended-title {
+        font-size: 20px;
+    }
+
+    .footer-heading {
+        font-size: 16px;
+    }
+}
+
+/* Utility Classes */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Focus States for Accessibility */
+button:focus,
+input:focus,
+a:focus {
+    outline: 2px solid #ca9953;
+    outline-offset: 2px;
+}
+
+/* Hover States */
+.nav-link:hover,
+.footer-link:hover {
+    opacity: 0.8;
+}
+
+.order-btn:hover,
+.recommended-order-btn:hover {
+    background-color: #1a0040;
+}
+
+.contact-btn:hover {
+    background-color: #f0f0f0;
+}
+
+/* Animations and Transitions */
+.wishlist-icon, .order-btn, .nav-item, .footer-link, .social-icon {
+    transition: all 0.2s ease-in-out;
+}
+
+/* Loading State */
+.loading {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+/* Print Styles */
+@media print {
+    .main-header, .breadcrumb-nav, .filters-sidebar, .recommended-section, .main-footer {
+        display: none;
+    }
+
+    body {
+        color: #000;
+        background: #fff;
+    }
+
+    .products-section {
+        width: 100%;
+    }
+
+    .product-card {
+        break-inside: avoid;
+    }
+}
+        body {margin:0;padding:0;font-family:'Inter',-apple-system,Roboto,Helvetica,sans-serif;background:#fff;color:#2d006b}
+        .main-header {background-color:#2d006b;box-shadow:0 3px 20px rgba(0,0,0,.3);width:100%;position:relative;z-index:100}
+        .top-strip {background-color:#472f92;color:#fff;font-family:'Poppins',sans-serif;font-size:16px;line-height:40px;text-align:center;width:100%}
+        .nav-container {max-width:1387px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:0 20px}
+        @media (max-width:991px) {.nav-container{flex-direction:column;gap:15px}}
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="top-strip">
+            FREE SHIPPING all over India
+        </div>
+        
+        <!-- Bootstrap 4.6 CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <style>
+          .navbar-custom {
+            background-color: #2a0061; /* Deep purple background */
+          }
+      
+          .navbar-custom .nav-link {
+            color: white;
+            font-weight: bold;
+            padding-right: 20px;
+            padding-left: 20px;
+          }
+      
+          .navbar-custom .nav-link:hover,
+          .navbar-custom .nav-link:focus {
+            color: #ffbb55; /* goldish hover */
+          }
+      
+          .navbar-custom .dropdown:hover .dropdown-menu {
+            display: block;
+          }
+      
+          .navbar-custom .dropdown-menu {
+            background-color: white;
+            border: none;
+          }
+      
+          .navbar-custom .dropdown-item {
+            color: #2a0061;
+            font-weight: bold;
+          }
+      
+          .navbar-custom .dropdown-item:hover {
+            background-color: #f8f9fa;
+            color: #d400a4;
+          }
+      
+          .navbar-custom .form-control {
+            border-radius: 25px;
+            background-color: #2a0061;
+            border: 1px solid #999;
+            color: white;
+          }
+      
+          .navbar-custom .form-control::placeholder {
+            color: #bbaac9;
+          }
+          
+          /* Fix for mobile navbar toggle button */
+          .navbar-toggler {
+            border-color: rgba(255,255,255,0.5);
+          }
+          
+          .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+          }
+          
+          /* Ensure mobile menu appears properly */
+          @media (max-width: 991px) {
+            .navbar-collapse {
+              background-color: #2a0061;
+              padding: 10px;
+            }
+          }
+        </style>
+        
+        <nav class="navbar navbar-expand-lg navbar-custom">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="https://static.vecteezy.com/system/resources/thumbnails/012/986/638/small_2x/flowing-chocolate-circle-logo-icon-png.png"
+                alt="Logo" style="height: 50px;">
+            </a>
+        
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">
+                    OCCASIONS
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#birthday">Birthday</a>
+                    <a class="dropdown-item" href="#anniversary">Anniversary</a>
+                    <a class="dropdown-item" href="#festivals">Festivals</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color: #ffbb55;" href="#anniversary-gifts">ANNIVERSARY GIFTS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color: #ffbb55;" href="#personalised-gifts">PERSONALISED GIFTS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#same-day">SAME DAY DELIVERY</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#corporate">CORPORATE</a>
+                </li>
+              </ul>
+        
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </nav>
+
+
+    </header>
+
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb-nav">
+        <a href="#" class="breadcrumb-link home">Home</a>
+        <span class="breadcrumb-separator">/ </span>
+        <a href="#" class="breadcrumb-link">Occasions</a>
+        <span class="breadcrumb-separator">/ </span>
+        <span class="breadcrumb-current">Anniversary Gifts</span>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="hero-banner">
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a30e4f2eaa6c7590697b8f5b73e056d84695607f?placeholderIfAbsent=true&apiKey=6ad0dc696aba46d2bc6ac5dd4f130439" alt="Anniversary Gifts Banner" class="hero-image" loading="eager" width="1440" height="400">
+    </section>
+
+    <!-- Main Content -->
+<section id="anniversary-gifts" class="products-section">
+  <header class="products-header mb-4">
+    <h1 class="page-title">Anniversary Gifts</h1>
+    <div class="items-count">
+      <span class="count-number">17</span>
+      <span class="count-text">Items</span>
+    </div>
+   </header>
+
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Product  -->
+      <div class="col-md-4 d-flex mb-4">
+        <div class="card w-100 d-flex flex-column">
+          <img src="https://backoffice.cadburygifting.in/media/catalog/product/6//6-_cadbury_valentine_s_20259953_600x600.png?optimize=high&fit=bounds&height=500&width=500&format=auto" class="card-img-top" alt="Featured Product 1" class="card-img-top" alt="Wishlist">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Cadbury Personalised Heart Gift Box</h5>
+            <div class="product-rating mb-2">
+              <img src="https://backoffice.cadburygifting.in/media/catalog/product/6//6-_cadbury_valentine_s_20259953_600x600.png?optimize=high&fit=bounds&height=500&width=500&format=auto" alt="Best Seller" class="badge-bg">
+              <span class="rating-text">No ratings yet</span>
+            </div>
+            <div class="product-pricing mb-2">
+              <span class="text-danger font-weight-bold">₹1,050</span>
+              <small class="text-muted ml-2"><s>₹1,100</s></small>
+              <span class="badge badge-success ml-2">5% Off</span>
+            </div>
+            <a href="#" class="btn btn-primary mt-auto">Order Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex mb-4">
+        <div class="card w-100 d-flex flex-column">
+          <img src="https://backoffice.cadburygifting.in/media/catalog/product/1/2/12-_valentines_large_heart_shape_love_box_plain_photo_frame.png?optimize=high&fit=bounds&height=500&width=500&format=auto" class="card-img-top" alt="Featured Product 2">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Cadbury Hearts & Roses Gift with Photo Frame</h5>
+            <div class="product-rating mb-2">
+              <span class="rating-score">5.0</span>
+              <img src="https://backoffice.cadburygifting.in/media/catalog/product/1/2/12-_valentines_large_heart_shape_love_box_plain_photo_frame.png?optimize=high&fit=bounds&height=500&width=500&format=auto" alt="Best Seller" class="badge-bg">
+              <span class="rating-count">(1 Rating)</span>
+            </div>
+            <div class="product-pricing mb-2">
+              <span class="text-danger font-weight-bold">₹950</span>
+            </div>
+            <a href="#" class="btn btn-primary mt-auto">Order Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex mb-4">
+        <div class="card w-100 d-flex flex-column">
+          <div class="product-image-container">
+            <img src="https://backoffice.cadburygifting.in/media/catalog/product/1/5/15_c_new_chocolates_25th_sept_best_wishes_card.png?optimize=high&fit=bounds&height=500&width=500&format=auto" class="card-img-top" alt="Anniversary Tin Box">
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Cadbury Personalised Anniversary Tin Box</h5>
+            <div class="product-rating mb-2">
+              <img src="https://backoffice.cadburygifting.in/media/catalog/product/1/5/15_c_new_chocolates_25th_sept_best_wishes_card.png?optimize=high&fit=bounds&height=500&width=500&format=auto" alt="No Rating" class="rating-stars">
+              <span class="rating-text">No ratings yet</span>
+            </div>
+            <div class="product-pricing mb-2">
+              <span class="text-danger font-weight-bold">₹1,000</span>
+            </div>
+            <a href="#" class="btn btn-primary mt-auto">Order Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex mb-4">
+        <div class="card w-100 d-flex flex-column">
+          <img src="https://backoffice.cadburygifting.in/media/catalog/product/1/_/1_warm_wishes_potli_1_photoframe_1_bournville.png?optimize=high&fit=bounds&height=500&width=500&format=auto" alt="Featured Product 2">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Cadbury chocolate Gift with Photo Frame</h5>
+            <div class="product-rating mb-2">
+              <span class="rating-score">5.0</span>
+              <img src="https://backoffice.cadburygifting.in/media/catalog/product/1/_/1_warm_wishes_potli_1_photoframe_1_bournville.png?optimize=high&fit=bounds&height=500&width=500&format=auto" alt="Best Seller" class="badge-bg">
+              <span class="rating-count">(1 Rating)</span>
+            </div>
+            <div class="product-pricing mb-2">
+              <span class="text-danger font-weight-bold">₹950</span>
+            </div>
+            <a href="#" class="btn btn-primary mt-auto">Order Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex mb-4">
+        <div class="card w-100 d-flex flex-column">
+          <img src="https://backoffice.cadburygifting.in/media/catalog/product/v/a/valentine_potli_2_small_silk_valentine_card.png?optimize=high&fit=bounds&height=500&width=500&format=auto" alt="Featured Product 2">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Cadbury Valentine's Silk and Dairy Milk Potli with Personalised Card</h5>
+            <div class="product-rating mb-2">
+              <span class="rating-score">5.0</span>
+              <img src="https://backoffice.cadburygifting.in/media/catalog/product/v/a/valentine_potli_2_small_silk_valentine_card.png?optimize=high&fit=bounds&height=500&width=500&format=auto" alt="Best Seller" class="badge-bg">
+              <span class="rating-count">(1 Rating)</span>
+            </div>
+            <div class="product-pricing mb-2">
+              <span class="text-danger font-weight-bold">₹950</span>
+            </div>
+            <a href="#" class="btn btn-primary mt-auto">Order Now</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+      <!--main content 2-->
+    <section id="personalised-gifts" class="products-section">
+  <header class="products-header mb-4">
+    <h2 class="page-title">Personalised Gifts</h2>
+    <div class="items-count">
+      <span class="count-number">17</span>
+      <span class="count-text">Items</span>
+    </div>
+  </header>
+
+    <div class="container-fluid 2">
+    <div class="row">
+      <!-- Product  -->
+      <div class="col-md-4 d-flex mb-4">
+        <div class="card w-100 d-flex flex-column">
+          <img src="https://backoffice.cadburygifting.in/media/catalog/product/y/r/yr_neon_pack_happy_anniversary_non_personalised_image.png?optimize=high&fit=bounds&height=500&width=500&format=auto" class="card-img-top" alt="Featured Product 1" class="card-img-top" alt="Wishlist">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Personalised Cadbury Anniversary Gift Box</h5>
+            <div class="product-rating mb-2">
+              <img src="https://backoffice.cadburygifting.in/media/catalog/product/y/r/yr_neon_pack_happy_anniversary_non_personalised_image.png?optimize=high&fit=bounds&height=500&width=500&format=auto" alt="Best Seller" class="badge-bg">
+              <span class="rating-text">No ratings yet</span>
+            </div>
+            <div class="product-pricing mb-2">
+              <span class="text-danger font-weight-bold">₹1,050</span>
+              <small class="text-muted ml-2"><s>₹1,100</s></small>
+              <span class="badge badge-success ml-2">5% Off</span>
+            </div>
+            <a href="#" class="btn btn-primary mt-auto">Order Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex mb-4">
+        <div class="card w-100 d-flex flex-column">
+          <img src="https://backoffice.cadburygifting.in/media/catalog/product/b/i/birthday_tin_box_card.png?optimize=high&fit=bounds&height=500&width=500&format=auto" class="card-img-top" alt="Featured Product 2">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Personalised Birthday Tin Box</h5>
+            <div class="product-rating mb-2">
+              <span class="rating-score">5.0</span>
+              <img src="https://backoffice.cadburygifting.in/media/catalog/product/b/i/birthday_tin_box_card.png?optimize=high&fit=bounds&height=500&width=500&format=auto" alt="Best Seller" class="badge-bg">
+              <span class="rating-count">(1 Rating)</span>
+            </div>
+            <div class="product-pricing mb-2">
+              <span class="text-danger font-weight-bold">₹950</span>
+            </div>
+            <a href="#" class="btn btn-primary mt-auto">Order Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex mb-4">
+        <div class="card w-100 d-flex flex-column">
+          <div class="product-image-container">
+            <img src="https://backoffice.cadburygifting.in/media/catalog/product/y/e/year_around_congrats_2_silk.png?optimize=high&fit=bounds&height=500&width=500&format=auto" class="card-img-top" alt="Anniversary Tin Box">
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Personalised Congrats Gift Box</h5>
+            <div class="product-rating mb-2">
+              <img src="https://backoffice.cadburygifting.in/media/catalog/product/y/e/year_around_congrats_2_silk.png?optimize=high&fit=bounds&height=500&width=500&format=auto" alt="No Rating" class="rating-stars">
+              <span class="rating-text">No ratings yet</span>
+            </div>
+            <div class="product-pricing mb-2">
+              <span class="text-danger font-weight-bold">₹1,000</span>
+            </div>
+            <a href="#" class="btn btn-primary mt-auto">Order Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex mb-4">
+        <div class="card w-100 d-flex flex-column">
+          <img src="https://backoffice.cadburygifting.in/media/catalog/product/1/_/1_warm_wishes_potli_1_photoframe_1_bournville.png?optimize=high&fit=bounds&height=500&width=500&format=auto" alt="Featured Product 2">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Cadbury chocolate Gift with Photo Frame</h5>
+            <div class="product-rating mb-2">
+              <span class="rating-score">5.0</span>
+              <img src="https://backoffice.cadburygifting.in/media/catalog/product/1/_/1_warm_wishes_potli_1_photoframe_1_bournville.png?optimize=high&fit=bounds&height=500&width=500&format=auto" alt="Best Seller" class="badge-bg">
+              <span class="rating-count">(1 Rating)</span>
+            </div>
+            <div class="product-pricing mb-2">
+              <span class="text-danger font-weight-bold">₹950</span>
+            </div>
+            <a href="#" class="btn btn-primary mt-auto">Order Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex mb-4">
+        <div class="card w-100 d-flex flex-column">
+          <img src="https://backoffice.cadburygifting.in/media/catalog/product/v/a/valentine_potli_2_small_silk_valentine_card.png?optimize=high&fit=bounds&height=500&width=500&format=auto" alt="Featured Product 2">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Cadbury Valentine's Silk and Dairy Milk Potli with Personalised Card</h5>
+            <div class="product-rating mb-2">
+              <span class="rating-score">5.0</span>
+              <img src="https://backoffice.cadburygifting.in/media/catalog/product/v/a/valentine_potli_2_small_silk_valentine_card.png?optimize=high&fit=bounds&height=500&width=500&format=auto" alt="Best Seller" class="badge-bg">
+              <span class="rating-count">(1 Rating)</span>
+            </div>
+            <div class="product-pricing mb-2">
+              <span class="text-danger font-weight-bold">₹950</span>
+            </div>
+            <a href="#" class="btn btn-primary mt-auto">Order Now</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+    <!-- Recommended Products Section -->
+    <section class="recommended-section">
+        <div class="recommended-container">
+            <aside class="discount-sidebar">
+                <div class="discount-content">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/7a0c1e292e8a568b34fc3367af6145c5590e3798?placeholderIfAbsent=true&apiKey=6ad0dc696aba46d2bc6ac5dd4f130439" alt="Discount Icon" class="discount-icon">
+                    <div class="discount-info">
+                        <span class="discount-text">Discount</span>
+                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/16fd4491384606c33b260574f7b78d0514a055e2?placeholderIfAbsent=true&apiKey=6ad0dc696aba46d2bc6ac5dd4f130439" alt="Expand" class="expand-icon">
+                    </div>
+                </div>
+            </aside>
+            <div class="recommended-content">
+                <h2 class="recommended-title">Recommended for You</h2>
+                <div class="recommended-products">
+                    <article class="recommended-product-card" data-product-id="p6">
+                        <div class="product-image-wrapper">
+                            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/0000e7fbc5100e0895031001da2fb879685cb9ea?placeholderIfAbsent=true&apiKey=6ad0dc696aba46d2bc6ac5dd4f130439" alt="Personalised surprise box" class="recommended-product-image" loading="lazy" width="150" height="150">
+                        </div>
+                        <div class="recommended-product-details">
+                            <h3 class="recommended-product-title">Personalised surprise box with Teddy & Dairy Milk chocolates</h3>
+                            <div class="recommended-product-rating">
+                                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/f4895c381ee8d31ea66f16482311fea548bc6a66?placeholderIfAbsent=true&apiKey=6ad0dc696aba46d2bc6ac5dd4f130439" alt="Rating Stars" class="rating-stars">
+                                <span class="review-count">(1 Review)</span>
+                            </div>
+                            <div class="recommended-product-price">₹1,200</div>
+                            <button class="recommended-order-btn">Order Now</button>
+                        </div>
+                    </article>
+                    <article class="recommended-product-card" data-product-id="p7">
+                        <div class="product-image-wrapper">
+                            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a95c587d2b5920afc5439342383e80449dcad237?placeholderIfAbsent=true&apiKey=6ad0dc696aba46d2bc6ac5dd4f130439" alt="Warm Wishes Satin Potli" class="recommended-product-image" loading="lazy" width="150" height="150">
+                        </div>
+                        <div class="recommended-product-details">
+                            <h3 class="recommended-product-title">Warm Wishes Satin Potli ( Large )</h3>
+                            <div class="recommended-product-rating">
+                                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/168c644ef3a20764e1eff8eea8b6f45efc45c4ce?placeholderIfAbsent=true&apiKey=6ad0dc696aba46d2bc6ac5dd4f130439" alt="Rating Stars" class="rating-stars">
+                                <span class="review-count">(6 Reviews)</span>
+                            </div>
+                            <div class="recommended-product-price">₹1,050</div>
+                            <button class="recommended-order-btn">Order Now</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h4 class="footer-heading">CONTACT US</h4>
+                    <address class="contact-info">
+                        <div class="address-line">Mondelez India Foods Private Limited,</div>
+                        <div class="address-line">Unit No. 2001, 20th Floor, Tower 3,</div>
+                        <div class="address-line">One International Center,</div>
+                        <div class="address-line">Senapati Bapat Marg, Prabhadevi</div>
+                        <div class="address-line">Mumbai - 400013, Maharashtra, India</div>
+                    </address>
+                    <a href="#" class="contact-btn">Contact Us</a>
+                    <div class="license-info">
+                        <div class="license-title">FSSAI License Number</div>
+                        <div class="license-number">10021031000057</div>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><img src="https://backoffice.cadburygifting.in/media/wysiwyg/headless/facebook-sm.png?optimize=medium&auto=webp&width=30&height=30" alt="Facebook" class="social-icon"></a>
+                        <a href="#" aria-label="Twitter"><img src="https://backoffice.cadburygifting.in/media/wysiwyg/headless/twitter-sm.png?optimize=medium&auto=webp&width=30&height=30" alt="Twitter" class="social-icon"></a>
+                        <a href="#" aria-label="Instagram"><img src="https://backoffice.cadburygifting.in/media/wysiwyg/headless/instagram-sm.png?optimize=medium&auto=webp&width=30&height=30" alt="Instagram" class="social-icon"></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Gifting Occasions</h4>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">Anniversary</a>
+                        <a href="#" class="footer-link">Birthday</a>
+                        <a href="#" class="footer-link">Valentines Day</a>
+                        <a href="#" class="footer-link">Rakhi</a>
+                        <a href="#" class="footer-link">Diwali</a>
+                        <a href="#" class="footer-link">Christmas</a>
+                        <a href="#" class="footer-link">Get Well Soon</a>
+                        <a href="#" class="footer-link">Congratulations</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Other Links</h4>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">Personalized</a>
+                        <a href="#" class="footer-link">Bulk Orders</a>
+                        <a href="#" class="footer-link">Same Day Delivery</a>
+                        <a href="#" class="footer-link">All Festivals</a>
+                        <a href="#" class="footer-link">All Occasions</a>
+                        <a href="#" class="footer-link">All Products</a>
+                        <a href="#" class="footer-link">Gifts for Her</a>
+                        <a href="#" class="footer-link">Gifts for Him</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Information</h4>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">About Us</a>
+                        <a href="#" class="footer-link">Blogs</a>
+                        <a href="#" class="footer-link">FAQ</a>
+                        <a href="#" class="footer-link">Privacy Policy</a>
+                        <a href="#" class="footer-link">Terms & Conditions</a>
+                        <a href="#" class="footer-link">Refund/Cancellation Policy</a>
+                        <a href="#" class="footer-link">Sitemap</a>
+                    </div>
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/012/986/638/small_2x/flowing-chocolate-circle-logo-icon-png.png" alt="Cadbury Logo" class="footer-logo">
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-menu">
+                © 2023 Mondelez International. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Script loading - defer for performance -->
+    <script src="script.ts" defer></script>
+    
+    <!-- Enable caching and preloading for performance -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="script.ts" as="script">
+    
+    <!-- Enable service worker for offline capability -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js').catch(err => {
+                    console.log('Service worker registration failed:', err);
+                });
+            });
+        }
+    </script>
+</body>
+</html>
